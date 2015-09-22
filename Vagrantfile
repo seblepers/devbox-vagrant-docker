@@ -14,4 +14,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision "shell", path: "provision.sh"
 
+  config.vm.synced_folder "projects/", "/projects"
+
 end
